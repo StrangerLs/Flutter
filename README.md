@@ -136,24 +136,24 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Proposal            |    H     |     1 hrs      |     2 hrs     |    3 hrs    |
+| Proposal            |    H     |     4 hrs      |     2 hrs     |    3 hrs    |
 | Backend file structure setup |    H     |     3 hrs      |     1 hrs     |     TBD     |
 | Create tables |    H     |     2 hrs      |     1 hrs     |     TBD     |
-| Api Call setup|    H     |     3 hrs      |     2 hrs     |     TBD     |
+| Api Call setup|    H     |     3 hrs      |     3 hrs     |     TBD     |
 | Route setup |    H     |     3 hrs      |     3 hrs     |     TBD     |
-| DB seed |    H     |     1 hrs      |     1 hrs     |     TBD     |
+| DB seed |    H     |     1 hrs      |     2 hrs     |     TBD     |
 | Create Frontend file structure |    H     |     3 hrs      |     1 hrs     |     TBD     |
 | Hookup backend to front end |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Homepage/styling |    H     |     5 hrs      |     1 hrs     |     TBD     |
-| Navbar/styling |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Sign in/styling |    H     |     2 hrs      |     1 hrs     |     TBD     |
-| Sign up/styling |    H     |     2 hrs      |     1 hrs     |     TBD     |
-| General bird page/styling |    H     |     4 hrs      |     1 hrs     |     TBD     |
-| Specific bird page/styling |    H     |     4 hrs      |     1 hrs     |     TBD     |
-| Create Bird page/styling |    H     |     4 hrs      |     1 hrs     |     TBD     |
-| Bird care page/styling |    L     |     4 hrs      |     1 hrs     |     TBD     |
-| supplies page/styling |    L     |     4 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     42 hrs      |     3 hrs     |     TBD     |
+| Homepage/styling |    H     |     5 hrs      |     2 hrs     |     TBD     |
+| Navbar/styling |    H     |     3 hrs      |     2 hrs     |     TBD     |
+| Sign in/styling |    H     |     2 hrs      |     2 hrs     |     TBD     |
+| Sign up/styling |    H     |     2 hrs      |     2 hrs     |     TBD     |
+| General bird page/styling |    H     |     4 hrs      |     2 hrs     |     TBD     |
+| Specific bird page/styling |    H     |     4 hrs      |     2 hrs     |     TBD     |
+| Create Bird page/styling |    H     |     4 hrs      |     2 hrs     |     TBD     |
+| Bird care page/styling |    L     |     4 hrs      |     2 hrs     |     TBD     |
+| supplies page/styling |    L     |     4 hrs      |     2 hrs     |     TBD     |
+| TOTAL               |          |     45 hrs      |     3 hrs     |     TBD     |
 
 
 <br>
