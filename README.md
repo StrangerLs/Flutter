@@ -163,7 +163,10 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+- bird care page
+- supplies page
+- potential comment system for users on birds
+- bird rating system
 
 ***
 
