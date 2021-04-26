@@ -56,8 +56,9 @@
 
 
 - Desktop Landing
+- 
+![Screen Shot 2021-04-26 at 8 48 27 AM](https://user-images.githubusercontent.com/78058810/116102814-41781680-a66c-11eb-84c3-3af8b9e657ca.png)
 
-![Screen Shot 2021-04-25 at 7 05 25 PM](https://user-images.githubusercontent.com/78058810/116016211-33d57900-a5f9-11eb-8e85-9b1bb5d42430.png)
 
 - Desktop Sign in
 
