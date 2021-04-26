@@ -11,7 +11,6 @@
 ## MVP
 
 **Flutter** MVP Will include 
- - Responsive, styled UI 
  - Login/sign-up/sign-out pages for users
  - Bird info pages/will include bird characteristics
  - Page for posting birds 
