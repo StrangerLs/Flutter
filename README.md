@@ -1,5 +1,6 @@
 
 
+
 ## Overview
 
 **Flutter** is a full-stack react on rails app that matches potential bird owners and current bird owners with available birds as pets. This website will allow users to make a profile and search for potential birds to be adopted based on specific criteria. Users will be able to favorite potential birds, interact with bird profiles and find information on types of birds. Users will also be able to post birds for adoption in their area and recommend other resources.
@@ -51,31 +52,33 @@
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
-
-![Dummy Link](url)
-
 - Desktop Landing
 
-![Dummy Link](url)
+![Screen Shot 2021-04-25 at 7 05 25 PM](https://user-images.githubusercontent.com/78058810/116016211-33d57900-a5f9-11eb-8e85-9b1bb5d42430.png)
 
-- Desktop Hero
+- Desktop Sign in
 
-![Dummy Link](url)
+![Screen Shot 2021-04-25 at 7 04 05 PM](https://user-images.githubusercontent.com/78058810/116016154-038dda80-a5f9-11eb-954d-a0e31621adc4.png)
 
-- Resource Index
+- Bird type
+![Screen Shot 2021-04-25 at 7 07 42 PM](https://user-images.githubusercontent.com/78058810/116016331-86169a00-a5f9-11eb-87a9-febcf3838e73.png)
 
-![Dummy Link](url)
 
-- Resource Show
+- Specific bird
+![Screen Shot 2021-04-25 at 7 09 39 PM](https://user-images.githubusercontent.com/78058810/116016437-d5f56100-a5f9-11eb-8730-324e166f323d.png)
 
-![Dummy Link](url)
+-bird friends
+![Screen Shot 2021-04-25 at 7 10 33 PM](https://user-images.githubusercontent.com/78058810/116016464-ead1f480-a5f9-11eb-970d-dca6f534921c.png)
 
-- Tablet Resource Index
+-bird care
 
-![Dummy Link](url)
+![Screen Shot 2021-04-25 at 7 11 01 PM](https://user-images.githubusercontent.com/78058810/116016487-fae9d400-a5f9-11eb-856f-c3371bb603e7.png)
 
-- Mobile Resource Index
+-Supplies
+
+![Screen Shot 2021-04-25 at 7 11 38 PM](https://user-images.githubusercontent.com/78058810/116016513-10f79480-a5fa-11eb-9fdd-d7c39e20eaab.png)
+
+
 
 #### Component Tree
 
