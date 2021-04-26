@@ -39,12 +39,11 @@
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|      Axios       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-|      Ruby        | _Lorem ipsum dolor sit amet, consectetur._ |
-|      Rails       | _Lorem ipsum dolor sit amet, consectetur._ |
-|      Pry         | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       | _Javascript library for ui_ |
+|      Axios       | _Makes Api calls and accesses data_ |
+|   React Router   | _Routing Library_ |
+|   Ruby on Rails  | _Backend framework MVC_ |
+|      Pry         | _Ruby repl_ |
 
 <br>
 
