@@ -17,7 +17,7 @@
  - Page for posting birds up for adoption in the area
  - Resource page for local bird related busineses
  - Landing page with mission statement
- - Ability to contact bird owners for potential adoption or bird inquiry
+ 
 
 <br>
 
