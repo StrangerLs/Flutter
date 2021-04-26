@@ -99,19 +99,29 @@
 
 #### Component Architecture
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
-
 ``` structure
 
 src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
 |__ components/
       |__ Header.jsx
+      |__ BirdInfo.jsx
+      |__ Birds.jsx
+|__ Containers
+      |__ MainContainer.jsx
+|__ Layout
+      |__Layout.jsx
+|__ Screens
+      |__ {SignUp.jsx, SignUp.Css}
+      |__ {SignIn.jsx, SignIn.Css}
+      |__ {GeneralBirds.jsx, GeneralBirds.Css}
+      |__ {SpecificBird.jsx, SpecificBird.Css}
+      |__ {BirdCare.jsx, BirdCare.Css}
+      |__ {Supplies.jsx, Supplies.Css}
+      |__ {BirdCreate.jsx, BirdCreate.Css}
+      |__ {Home.jsx, Home.Css}   
 |__ services/
+      |__ api_config.js
+      |__ birds.js
 
 ```
 
