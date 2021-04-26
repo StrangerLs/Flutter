@@ -58,14 +58,16 @@
 
 - Desktop Sign in
 
-![Screen Shot 2021-04-25 at 7 04 05 PM](https://user-images.githubusercontent.com/78058810/116016154-038dda80-a5f9-11eb-954d-a0e31621adc4.png)
+![Screen Shot 2021-04-25 at 7 36 58 PM](https://user-images.githubusercontent.com/78058810/116017719-9b8dc300-a5fd-11eb-92ec-fc7385bdd85e.png)
+
 
 - Bird type
 ![Screen Shot 2021-04-25 at 7 07 42 PM](https://user-images.githubusercontent.com/78058810/116016331-86169a00-a5f9-11eb-87a9-febcf3838e73.png)
 
 
 - Specific bird
-![Screen Shot 2021-04-25 at 7 09 39 PM](https://user-images.githubusercontent.com/78058810/116016437-d5f56100-a5f9-11eb-8730-324e166f323d.png)
+![Screen Shot 2021-04-25 at 7 37 56 PM](https://user-images.githubusercontent.com/78058810/116017763-bf510900-a5fd-11eb-9b6d-8853a1958cf3.png)
+
 
 -bird friends
 ![Screen Shot 2021-04-25 at 7 10 33 PM](https://user-images.githubusercontent.com/78058810/116016464-ead1f480-a5f9-11eb-970d-dca6f534921c.png)
@@ -77,6 +79,11 @@
 -Supplies
 
 ![Screen Shot 2021-04-25 at 7 11 38 PM](https://user-images.githubusercontent.com/78058810/116016513-10f79480-a5fa-11eb-9fdd-d7c39e20eaab.png)
+
+-Create Bird
+
+![Screen Shot 2021-04-25 at 7 38 26 PM](https://user-images.githubusercontent.com/78058810/116017792-d0017f00-a5fd-11eb-8edd-27b491dc13d5.png)
+
 
 
 
