@@ -125,6 +125,7 @@ src
       |__ {BirdCare.jsx, BirdCare.Css}
       |__ {Supplies.jsx, Supplies.Css}
       |__ {BirdCreate.jsx, BirdCreate.Css}
+      |__ {BirdEdit.jsx, BirdEdit.Css}
       |__ {Home.jsx, Home.Css}   
 |__ services/
       |__ api_config.js
