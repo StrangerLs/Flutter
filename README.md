@@ -109,19 +109,17 @@
 ``` structure
 
 src
-|__ components/
+|__ Shared
       |__ Header.jsx
-      |__ BirdInfo.jsx
-      |__ Birds.jsx
+      |__ Layout.jsx
 |__ Containers
       |__ MainContainer.jsx
-|__ Layout
-      |__Layout.jsx
 |__ Screens
       |__ {SignUp.jsx, SignUp.Css}
       |__ {SignIn.jsx, SignIn.Css}
-      |__ {GeneralBirds.jsx, GeneralBirds.Css}
-      |__ {SpecificBird.jsx, SpecificBird.Css}
+      |__ {AllBirds.jsx, AllBirds.Css}
+      |__ {BirdByType.jsx, BirdByType.Css}
+      |__ {BirdInfo.jsx, BirdInfo.Css}
       |__ {BirdCare.jsx, BirdCare.Css}
       |__ {Supplies.jsx, Supplies.Css}
       |__ {BirdCreate.jsx, BirdCreate.Css}
