@@ -61,13 +61,11 @@
 ![Screen Shot 2021-04-25 at 7 36 58 PM](https://user-images.githubusercontent.com/78058810/116017719-9b8dc300-a5fd-11eb-92ec-fc7385bdd85e.png)
 
 
-- Bird type
-- 
-![Screen Shot 2021-04-25 at 7 07 42 PM](https://user-images.githubusercontent.com/78058810/116016331-86169a00-a5f9-11eb-87a9-febcf3838e73.png)
+
 
 
 - Specific bird
-- 
+
 ![Screen Shot 2021-04-25 at 7 37 56 PM](https://user-images.githubusercontent.com/78058810/116017763-bf510900-a5fd-11eb-9b6d-8853a1958cf3.png)
 
 
