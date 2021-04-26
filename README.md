@@ -97,7 +97,8 @@
 
 #### Component Tree
 
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
+![Screen Shot 2021-04-26 at 8 42 24 AM](https://user-images.githubusercontent.com/78058810/116101856-6e77f980-a66b-11eb-9dcf-176e5dc37b23.png)
+
 
 #### Component Architecture
 
