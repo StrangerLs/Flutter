@@ -51,6 +51,9 @@
 ### Client (Front End)
 
 #### Wireframes
+- Desktop Landing Pre signup
+![Screen Shot 2021-04-25 at 7 01 44 PM](https://user-images.githubusercontent.com/78058810/116102386-e80fe780-a66b-11eb-9b37-7b7ba02b396e.png)
+
 
 - Desktop Landing
 
