@@ -100,7 +100,8 @@
 
 #### Component Tree
 
-![Screen Shot 2021-04-26 at 8 42 24 AM](https://user-images.githubusercontent.com/78058810/116101856-6e77f980-a66b-11eb-9dcf-176e5dc37b23.png)
+<img width="897" alt="Screen Shot 2021-04-26 at 1 55 19 PM" src="https://user-images.githubusercontent.com/78058810/116142378-135bfc00-a697-11eb-8811-b8cf9c517ae2.png">
+
 
 
 #### Component Architecture
