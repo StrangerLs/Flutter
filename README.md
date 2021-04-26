@@ -175,6 +175,7 @@ src
 - supplies page
 - potential comment system for users on birds
 - bird rating system
+- cart like feature for favoriting birds
 
 ***
 
