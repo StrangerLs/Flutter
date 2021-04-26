@@ -13,9 +13,8 @@
 **Flutter** MVP Will include 
  - Responsive, styled UI 
  - Login/sign-up/sign-out pages for users
- - Bird info pages/will include bird characteristics/care
- - Page for posting birds up for adoption in the area
- - Resource page for local bird related busineses
+ - Bird info pages/will include bird characteristics
+ - Page for posting birds 
  - Landing page with mission statement
  
 
