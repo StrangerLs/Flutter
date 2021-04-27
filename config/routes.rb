@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   post '/auth/login', to: 'authentication#login'
   get '/auth/verify', to: 'authentication#verify'
-  get '/birds/:bird_id/characteristics/:id', to 'characteristics#add_characteristic'
+  get '/birds/:bird_id/characteristics/:id', to: 'characteristics#add_characteristic'
   resources :characteristics, only: :index
   resources :birds
   resources :users, only: :create
