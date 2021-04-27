@@ -1,6 +1,7 @@
 class BirdsController < ApplicationController
-  before_action :set_bird, only: [:show, :update, :destroy]
-
+  before_action :set_bird, only: :show
+  before_action :authorize_request, only: [:create, :update, :destroy]
+  before_action :set_user_bird, only: [:update, :destroy]
   # GET /birds
   def index
     @birds = Bird.all
@@ -10,15 +11,16 @@ class BirdsController < ApplicationController
 
   # GET /birds/1
   def show
-    render json: @bird
+    render json: @bird, include: :characteristics
   end
 
   # POST /birds
   def create
     @bird = Bird.new(bird_params)
+    @bird.user = @current_user
 
     if @bird.save
-      render json: @bird, status: :created, location: @bird
+      render json: @bird, status: :created
     else
       render json: @bird.errors, status: :unprocessable_entity
     end
@@ -42,6 +44,10 @@ class BirdsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_bird
       @bird = Bird.find(params[:id])
+    end
+
+    def set_user_bird
+      @bird = @current_user.birds.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.

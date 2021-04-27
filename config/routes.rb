@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  resources :characteristics
+  post '/auth/login', to: 'authentication#login'
+  get '/auth/verify', to: 'authentication#verify'
+  get '/birds/:bird_id/characteristics/:id', to 'characteristics#add_characteristic'
+  resources :characteristics, only: :index
   resources :birds
-  resources :users
+  resources :users, only: :create
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
