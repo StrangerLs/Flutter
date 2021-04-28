@@ -34,7 +34,7 @@ export default function BirdCreate(props) {
           onChange={handleChange}
         />
       </label>
-
+      <br/>
       <label> Image Url:
         <input
           type='text'
@@ -43,7 +43,7 @@ export default function BirdCreate(props) {
           onChange={handleChange}
         />
       </label>
-
+      <br/>
       <label>Description:
         <input
           type='text'
@@ -52,15 +52,22 @@ export default function BirdCreate(props) {
           onChange={handleChange}
         />
       </label>
-
-      <label>Name:
-        <input
-          type='text'
+      <br/>
+      <label>Bird Type:
+        <select
+          defaultValue='default'
           name='type_of_bird'
           value={type_of_bird}
           onChange={handleChange}
-        />
+        >
+          <option disabled value='default'>-- Select bird --</option>
+          <option>Macaw</option>
+          <option>Conure</option>
+          <option>Cockatoo</option>
+          <option>African Grey</option>
+        </select>
       </label>
+      <br/>
       <button>Submit</button>
     </form>
   )

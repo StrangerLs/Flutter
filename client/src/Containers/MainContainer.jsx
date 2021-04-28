@@ -30,10 +30,18 @@ export default function MainContainer(props) {
     fetchBirds()
   }, [])
 
+  const handleCreate = async (formData) => {
+    const birdData = await postBird(formData);
+    setBirds(prevState => [...prevState, birdData])
+    history.push('/birds')
+  }
+
   return (
     <Switch>
       <Route path='/birds/create'>
-        <BirdCreate/>
+        <BirdCreate
+          handleCreate={handleCreate}
+        />
       </Route>
       <Route path='/birds/:id'>
         <BirdInfo
