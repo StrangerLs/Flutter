@@ -17,7 +17,9 @@ export default function Header() {
       <Link to="/register">
         <h3>Register</h3>
       </Link>
-      
+      <Link to="/birds">
+        Bird Friends
+      </Link>
     </div>
   );
 }

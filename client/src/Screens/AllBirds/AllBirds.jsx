@@ -13,11 +13,10 @@ export default function AllBirds(props) {
       <React.Fragment key={bird.id}>
         <Link to={`/birds/${bird.id}`}>
           <p>{bird.name}</p>
+        <img src={bird.image_url}/>
         </Link>
       </React.Fragment>
     ))}
-    <br />
-    <Link to='/birds/new'><button>create</button></Link>
   </div>
   )
 }

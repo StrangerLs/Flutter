@@ -5,7 +5,8 @@ import { Switch, Route, useHistory } from 'react-router-dom';
 import { getCharacteristics } from '../Services/characteristics'
 import { deleteBird, getAllBirds, postBird, putBird, getOneBird } from '../Services/birds'
 import AllBirds from '../Screens/AllBirds/AllBirds';
-
+import Home from '../Screens/Home/Home'
+import BirdInfo from '../Screens/BirdInfo/BirdInfo'
 export default function MainContainer(props) {
   const [birds, setBirds] = useState([]);
   const [characteristics, setCharacteristics] = useState([]);
@@ -30,11 +31,17 @@ export default function MainContainer(props) {
 
   return (
     <Switch>
-  
+      <Route path='/birds/:id'>
+        <BirdInfo
+          characteristics={characteristics}/>
+      </Route>
+      
       <Route path='/birds'>
         <AllBirds
           birds={birds}/>
       </Route>
+
+      <Home/>
     </Switch>
   )
 }
