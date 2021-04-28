@@ -10,16 +10,14 @@ export default function Header() {
       <button>
         <h3>MENU</h3>
       </button>
+      <Link to="/login">
+        <h3>LOG IN</h3>
+      </Link>
 
       <Link to="/register">
         <h3>Register</h3>
       </Link>
-      <Link to="/login">
-        <h3>LOG IN</h3>
-      </Link>
-      <Link to="/allbirds">
-        <h3>Bird Friends</h3>
-      </Link>
+      
     </div>
   );
 }
