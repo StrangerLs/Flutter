@@ -1,45 +1,68 @@
-import './App.css';
-import { useState, useEffect } from 'react';
-import { Switch, Route, useHistory } from 'react-router-dom'
-import Layout from './layouts/Layout';
-import Login from './screens/Login';
-import Register from './screens/Register';
-import { loginUser, registerUser, removeToken, verifyUser } from './services/auth';
-import MainContainer from './containers/MainContainer';
+// import './App.css';
+// import { useState, useEffect } from 'react';
+import { Switch, Route, useHistory } from "react-router-dom";
+import Home from "./Screens/Home/Home.jsx";
+import AllBirds from "./Screens/AllBirds/AllBirds";
+import SignIn from "./Screens/SignIn/SignIn";
+import SignUp from "./Screens/SignUp/SignUp"
+// import Layout from './layouts/Layout';
+// import Login from './screens/Login';
+// import Register from './screens/Register';
+// import { loginUser, registerUser, removeToken, verifyUser } from './Services/auth';
+// import MainContainer from './Containers/MainContainer';
+import Header from "./Shared/Header";
 
 function App() {
-  const [currentUser, setCurrentUser] = useState(null);
+  // const [currentUser, setCurrentUser] = useState(null);
 
-  const history = useHistory();
+  // const history = useHistory();
 
-  useEffect(() => {
-    const handleVerify = async () => {
-      const userData = await verifyUser();
-      setCurrentUser(userData);
-    }
-    handleVerify()
-  }, [])
+  // useEffect(() => {
+  //   const handleVerify = async () => {
+  //     const userData = await verifyUser();
+  //     setCurrentUser(userData);
+  //   }
+  //   handleVerify()
+  // }, [])
 
-  const handleLogin = async (formData) => {
-    const userData = await loginUser(formData);
-    setCurrentUser(userData);
-    history.push('/')
-  }
+  // const handleLogin = async (formData) => {
+  //   const userData = await loginUser(formData);
+  //   setCurrentUser(userData);
+  //   history.push('/')
+  // }
 
-  const handleRegister = async (formData) => {
-    const userData = await registerUser(formData);
-    setCurrentUser(userData);
-    history.push('/')
-  }
+  // const handleRegister = async (formData) => {
+  //   const userData = await registerUser(formData);
+  //   setCurrentUser(userData);
+  //   history.push('/')
+  // }
 
-  const handleLogout = () => {
-    setCurrentUser(null);
-    localStorage.removeItem('authToken');
-    removeToken();
-  }
+  // const handleLogout = () => {
+  //   setCurrentUser(null);
+  //   localStorage.removeItem('authToken');
+  //   removeToken();
+  // }
   return (
     <div className="App">
-      <Layout
+      <Header />
+      <Route exact path="/">
+        <Home />
+      </Route>
+
+
+      <Route path="/allbirds">
+        <AllBirds />
+      </Route>
+
+      <Route path="/login">
+        <SignIn />
+      </Route>
+
+      <Route path='/register'>
+        <SignUp/>
+      </Route>
+
+      {/* <Layout
         currentUser={currentUser}
         handleLogout={handleLogout}
       >
@@ -60,7 +83,7 @@ function App() {
             />
           </Route>
         </Switch>
-      </Layout>
+      </Layout>*/}
     </div>
   );
 }
