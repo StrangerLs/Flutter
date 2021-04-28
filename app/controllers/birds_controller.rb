@@ -18,7 +18,8 @@ class BirdsController < ApplicationController
   def create
     @bird = Bird.new(bird_params)
     @bird.user = @current_user
-
+   
+    
     if @bird.save
       render json: @bird, status: :created
     else
@@ -40,6 +41,11 @@ class BirdsController < ApplicationController
     @bird.destroy
   end
 
+  def show_by_type
+    @bird_by_type = Bird.where(type_of_bird: params[:name])
+    render json: @bird_by_type
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_bird
@@ -52,6 +58,7 @@ class BirdsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def bird_params
-      params.require(:bird).permit(:name, :description, :type, :image_url, :user_id)
+      params.require(:bird).permit(:name, :description, :type_of_bird, :image_url, :user_id)
+      # params.require(:bird).permit!
     end
 end

@@ -6,8 +6,6 @@ import { getOneBird } from '../../Services/birds';
 
 export default function BirdInfo(props) {
   const [bird, setBird] = useState(null);
-  const [charId, setCharId] = useState('')
-  const { characteristics } = props;
   const { id } = useParams()
   
 
@@ -19,15 +17,6 @@ export default function BirdInfo(props) {
     fetchOneBird()
   }, [])
 
-  const handleChange = (e) => {
-    const { value } = e.target;
-    setCharId(value)
-  }
-
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   const birdData = await add
-  // }
   return (
     <div>
       <h1>{bird?.name}</h1>

@@ -1,12 +1,15 @@
 import React from 'react'
 import { useState } from 'react';
+import { addCharacteristic } from '../../Services/characteristics';
 
 export default function BirdCreate(props) {
+  const [charId, setCharId] = useState('')
   const [formData, setFormData] = useState({
     name: '',
     image_url: '',
     description: '',
-    type_of_bird: ''
+    type_of_bird: '' 
+    
   })
   const { name, image_url, description, type_of_bird } = formData;
   const { handleCreate } = props;
@@ -17,12 +20,14 @@ export default function BirdCreate(props) {
     setFormData(prevState => ({
       ...prevState,
       [name]: value
+      
     }))
   }
 
   return (
     <form onSubmit={(e) => {
       e.preventDefault();
+      
       handleCreate(formData);
     }}>
       <h3>Add your bird!</h3>
@@ -67,7 +72,7 @@ export default function BirdCreate(props) {
           <option>African Grey</option>
         </select>
       </label>
-      <br/>
+      <br />
       <button>Submit</button>
     </form>
   )
