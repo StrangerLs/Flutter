@@ -7,6 +7,7 @@ import { deleteBird, getAllBirds, postBird, putBird, getOneBird } from '../Servi
 import AllBirds from '../Screens/AllBirds/AllBirds';
 import Home from '../Screens/Home/Home'
 import BirdInfo from '../Screens/BirdInfo/BirdInfo'
+import BirdCreate from '../Screens/BirdCreate/BirdCreate';
 export default function MainContainer(props) {
   const [birds, setBirds] = useState([]);
   const [characteristics, setCharacteristics] = useState([]);
@@ -31,6 +32,9 @@ export default function MainContainer(props) {
 
   return (
     <Switch>
+      <Route path='/birds/create'>
+        <BirdCreate/>
+      </Route>
       <Route path='/birds/:id'>
         <BirdInfo
           characteristics={characteristics}/>

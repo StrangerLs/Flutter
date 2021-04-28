@@ -48,38 +48,7 @@ function App() {
   }
   return (
     <div className="App">
-      {/* <Header/>
-      <Route exact path="/">
-        <Home />
-      </Route>
 
-      <Route path="/allbirds">
-        <AllBirds />
-      </Route>
-
-      <Route path="/login">
-        <SignIn />
-      </Route>
-
-      <Route path="/register">
-        <SignUp />
-      </Route>
-
-      <Route path='/birdtype'>
-        <BirdByType />
-      </Route>
-
-      <Route path='/createbird'>
-        <BirdCreate />
-      </Route>
-
-      <Route path='/editbird'>
-        <BirdEdit />
-      </Route>
-
-      <Route path='birdinfo'>
-        <BirdInfo />
-      </Route> */}
 
       <Header
         currentUser={currentUser}
