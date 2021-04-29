@@ -38,10 +38,11 @@ export default function BirdInfo(props) {
       <img src={bird?.image_url} />
       <h2>{bird?.description}</h2>
       <h3>{bird?.type_of_bird}</h3>
-      <Link to={`/birds/${bird?.id}/edit`}></Link>
+      
       {currentUser?.id === bird?.user_id && (
         <>
-          <button>Edit</button>
+          <Link to={`/birds/${bird?.id}/edit`}><button>Edit</button></Link>
+          
           <button onClick={() => handleDelete(bird.id)}>delete</button>
           <form onSubmit={handleSubmit}>
         <select onChange={handleChange} defaultValue="default">

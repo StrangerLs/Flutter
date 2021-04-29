@@ -41,10 +41,10 @@ class BirdsController < ApplicationController
     @bird.destroy
   end
 
-  # def show_by_type
-  #   @bird_by_type = Bird.where(type_of_bird: params[:name])
-  #   render json: @bird_by_type, include: :characteristics
-  # end
+  def show_by_type
+    @bird_by_type = Bird.where(type_of_bird: params[:name])
+    render json: @bird_by_type, include: :characteristics
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
