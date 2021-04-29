@@ -73,7 +73,8 @@ export default function MainContainer(props) {
         <BirdInfo
           characteristics={characteristics}
           currentUser={currentUser}
-          handleDelete={handleDelete}/>
+          handleDelete={handleDelete} />
+          
       </Route>
       
       <Route path='/birds'>

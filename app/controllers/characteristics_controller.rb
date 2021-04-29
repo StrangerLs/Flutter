@@ -11,7 +11,7 @@ class CharacteristicsController < ApplicationController
     @bird = Bird.find(params[:bird_id])
     @characteristic = Characteristic.find(params[:id])
 
-    @bird.Characteristic.push(@characteristic)
+    @bird.characteristics.push(@characteristic)
 
     render json: @bird, include: :characteristics
   end

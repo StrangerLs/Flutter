@@ -1,15 +1,17 @@
 import React from 'react'
 import { useState, useEffect } from "react";
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 import { getOneBird } from '../../Services/birds';
 import { Link } from 'react-router-dom';
+import {addCharacteristic} from '../../Services/characteristics'
 
 
 export default function BirdInfo(props) {
+  const [charId, setCharId] = useState('');
   const [bird, setBird] = useState(null);
   const { id } = useParams()
-  const { currentUser, handleDelete } = props;
-  
+  const { currentUser, handleDelete, characteristics } = props;
+  const history = useHistory()
   
   useEffect(() => {
     const fetchOneBird = async () => {
@@ -18,6 +20,18 @@ export default function BirdInfo(props) {
     }
     fetchOneBird()
   }, [])
+
+  const handleChange = (e) => {
+    const { value } = e.target;
+    setCharId(value)
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const birdData = await addCharacteristic(id, charId)
+    setBird(birdData)
+    history.push('/birds')
+  }
   
   return (
     <div>
@@ -26,7 +40,8 @@ export default function BirdInfo(props) {
       <h2>{bird?.description}</h2>
       <h3>{bird?.type_of_bird}</h3>
       <Link to={`/birds/${bird?.id}/edit`}>
-     
+      
+
         <button>
           Edit
       </button>
@@ -37,7 +52,16 @@ export default function BirdInfo(props) {
             <>
               <button onClick={() => handleDelete(bird.id)}>delete</button>
             </>
-          }
+      }
+      <form onSubmit={handleSubmit}>
+        <select onChange={handleChange} defaultValue='default'>
+          <option disabled value='default'>-- Select a characteristic --</option>
+          {characteristics.map(characteristic => (
+            <option key={characteristic.id} value={characteristic.id}>{characteristic.name}</option>
+          ))}
+        </select>
+        <button>add</button>
+      </form>
     </div>
 
   )
