@@ -31,6 +31,9 @@ export default function BirdInfo(props) {
     setBird(birdData);
     history.push("/birds");
   };
+  if (!bird) {
+    return <></>
+  }
 
   return (
     <div>
@@ -38,7 +41,12 @@ export default function BirdInfo(props) {
       <img src={bird?.image_url} />
       <h2>{bird?.description}</h2>
       <h3>{bird?.type_of_bird}</h3>
-      
+      <h4>{bird?.name}</h4>
+      {bird.characteristics.map(bird => (
+      <React.Fragment key={bird.id}>
+          <p>{bird.name}</p>               
+      </React.Fragment>
+    ))}
       {currentUser?.id === bird?.user_id && (
         <>
           <Link to={`/birds/${bird?.id}/edit`}><button>Edit</button></Link>
