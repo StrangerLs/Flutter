@@ -26,7 +26,7 @@ const [click, setClick] = useState(false)
       <div class="dropdown">
         <button onClick={handleClick} className="dropbtn">Menu</button>
   <div id="myDropdown" className={click ? "show" : "dropdown-content"}>
-    <Link to="#">Birds!</Link>
+    <Link to="/birds/type">Birds!</Link>
     <br/>
     <Link to="/birds/create">Add a Bird</Link>
   </div>

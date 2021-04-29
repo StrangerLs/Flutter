@@ -1,14 +1,11 @@
 import "./App.css";
 import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory } from "react-router-dom";
-import Home from "./Screens/Home/Home.jsx";
+
 import AllBirds from "./Screens/AllBirds/AllBirds";
 import SignIn from "./Screens/SignIn/SignIn";
 import SignUp from "./Screens/SignUp/SignUp";
-import BirdByType from "./Screens/BirdByType/BirdByType";
-import BirdCreate from "./Screens/BirdCreate/BirdCreate";
-import BirdEdit from "./Screens/BirdEdit/BirdEdit";
-import BirdInfo from "./Screens/BirdInfo/BirdInfo";
+
 import Header from "./Shared/Header";
 import Layout from './Shared/Layout';
 

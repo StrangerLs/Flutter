@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState } from 'react';
-import { addCharacteristic } from '../../Services/characteristics';
+
 
 export default function BirdCreate(props) {
-  const [charId, setCharId] = useState('')
+  
   const [formData, setFormData] = useState({
     name: '',
     image_url: '',

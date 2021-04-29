@@ -8,6 +8,8 @@ import AllBirds from '../Screens/AllBirds/AllBirds';
 import Home from '../Screens/Home/Home'
 import BirdInfo from '../Screens/BirdInfo/BirdInfo'
 import BirdCreate from '../Screens/BirdCreate/BirdCreate';
+import BirdByType from '../Screens/BirdByType/BirdByType'
+import BirdEdit from '../Screens/BirdEdit/BirdEdit';
 export default function MainContainer(props) {
   const [birds, setBirds] = useState([]);
   const [characteristics, setCharacteristics] = useState([]);
@@ -30,6 +32,14 @@ export default function MainContainer(props) {
     fetchBirds()
   }, [])
 
+  const handleEdit = async (id, formData) => {
+    const birdData = await putBird(id, formData);
+    setBirds(prevState => prevState.map(bird => {
+      return bird.id === Number(id) ? birdData : bird
+    }))
+    history.push('/birds')
+  }
+
   const handleCreate = async (formData) => {
     const birdData = await postBird(formData);
     setBirds(prevState => [...prevState, birdData])
@@ -38,6 +48,16 @@ export default function MainContainer(props) {
 
   return (
     <Switch>
+      <Route path='/birds/type'>
+        <BirdByType
+          birds={birds}/>
+      </Route>
+      <Route path='/birds/:id/edit'>
+        <BirdEdit
+          birds={birds}
+          handleEdit={handleEdit}
+        />
+      </Route>
       <Route path='/birds/create'>
         <BirdCreate
           handleCreate={handleCreate}
