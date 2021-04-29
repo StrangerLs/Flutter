@@ -2,12 +2,12 @@ import "./App.css";
 import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory } from "react-router-dom";
 
-import AllBirds from "./Screens/AllBirds/AllBirds";
+
 import SignIn from "./Screens/SignIn/SignIn";
 import SignUp from "./Screens/SignUp/SignUp";
 
 import Header from "./Shared/Header";
-import Layout from './Shared/Layout';
+
 
 
 import { loginUser, registerUser, removeToken, verifyUser } from './Services/auth';

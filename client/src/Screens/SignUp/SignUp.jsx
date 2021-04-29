@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 
 export default function SignUp(props) {
   const [formData, setFormData] = useState({
@@ -10,7 +11,7 @@ export default function SignUp(props) {
 
   const { username, email, password } = formData;
   const { handleRegister } = props;
-
+  const history = useHistory()
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevState => ({
@@ -22,7 +23,8 @@ export default function SignUp(props) {
     
       <form onSubmit={(e) => {
         e.preventDefault();
-        handleRegister(formData)
+      handleRegister(formData)
+      history.push('/birds/create')
       }}>
         <h3>Sign Up!</h3>
         <label>

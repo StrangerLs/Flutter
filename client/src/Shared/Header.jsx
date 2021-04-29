@@ -22,7 +22,7 @@ export default function Header(props) {
         <h1>Welcome!</h1>
       )}
 
-      <div class="dropdown">
+      <div className="dropdown">
         <button onClick={handleClick} className="dropbtn">
           Menu
         </button>
