@@ -29,7 +29,7 @@ export default function Header(props) {
         <div id="myDropdown" className={click ? "show" : "dropdown-content"}>
           <Link to='/birds/type/Macaw'>Macaws</Link>
           <br/>
-          <Link to='/birds/type/African Grey'>Afircan Greys</Link>
+          <Link to='/birds/type/African Grey'>African Greys</Link>
           <br/>
           <Link to='/birds/type/Conure'>Conures</Link>
           <br/>
