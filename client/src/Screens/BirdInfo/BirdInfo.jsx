@@ -40,7 +40,7 @@ export default function BirdInfo(props) {
       <h1>{bird?.name}</h1>
       <img src={bird?.image_url} />
       <h2>{bird?.description}</h2>
-      <h3>{bird?.type_of_bird}</h3>
+      <h3>Type: {bird?.type_of_bird}</h3>
       <h4>{bird?.name}</h4>
       {bird.characteristics.map(bird => (
       <React.Fragment key={bird.id}>
