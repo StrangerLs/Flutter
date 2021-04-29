@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 export default function BirdInfo(props) {
   const [bird, setBird] = useState(null);
   const { id } = useParams()
+  const { currentUser, handleDelete } = props;
   
   
   useEffect(() => {
@@ -25,10 +26,18 @@ export default function BirdInfo(props) {
       <h2>{bird?.description}</h2>
       <h3>{bird?.type_of_bird}</h3>
       <Link to={`/birds/${bird?.id}/edit`}>
+     
         <button>
           Edit
       </button>
+    
       </Link>
+      {
+            currentUser?.id === bird?.user_id &&
+            <>
+              <button onClick={() => handleDelete(bird.id)}>delete</button>
+            </>
+          }
     </div>
 
   )

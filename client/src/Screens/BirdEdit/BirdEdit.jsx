@@ -18,10 +18,10 @@ export default function BirdEdit(props) {
     const prefillFormData = () => {
       const birdy = birds.find(bird => bird.id === Number(id))
       setFormData({
-        name: birdy.name,
-        image_url: birdy.image_url,
-        description: birdy.description,
-        type_of_bird: birdy.type_of_bird
+        name: birdy?.name,
+        image_url: birdy?.image_url,
+        description: birdy?.description,
+        type_of_bird: birdy?.type_of_bird
       })
     }
     if (birds.length) {

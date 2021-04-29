@@ -46,6 +46,12 @@ export default function MainContainer(props) {
     history.push('/birds')
   }
 
+  const handleDelete = async (id) => {
+    await deleteBird(id);
+    setBirds(prevState => prevState.filter(bird => bird.id !== id))
+    history.push('/birds')
+  }
+
   return (
     <Switch>
       <Route path='/birds/type'>
@@ -65,7 +71,9 @@ export default function MainContainer(props) {
       </Route>
       <Route path='/birds/:id'>
         <BirdInfo
-          characteristics={characteristics}/>
+          characteristics={characteristics}
+          currentUser={currentUser}
+          handleDelete={handleDelete}/>
       </Route>
       
       <Route path='/birds'>
