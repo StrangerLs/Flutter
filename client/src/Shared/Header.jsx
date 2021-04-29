@@ -1,43 +1,46 @@
 import React from "react";
-import { Link, Route } from "react-router-dom";
-import { useState } from 'react';
-import './header.css'
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import "./header.css";
 
-export default function Header() {
-const [click, setClick] = useState(false)
+export default function Header(props) {
+  const { currentUser, handleLogout } = props;
+  const [click, setClick] = useState(false);
   const handleClick = () => {
-    setClick(!click)
-  }
-
-
-
-    
+    setClick(!click);
+  };
 
   return (
     <div>
       <Link to="/">
         <h1>FLUTTER</h1>
       </Link>
-      
-      <Link to="/login">
-        <h3>LOG IN</h3>
-      </Link>
+
+      {currentUser ? (
+        <h1>{`Welcome ${currentUser?.username}!`}</h1>
+      ) : (
+        <h1>Welcome!</h1>
+      )}
 
       <div class="dropdown">
-        <button onClick={handleClick} className="dropbtn">Menu</button>
-  <div id="myDropdown" className={click ? "show" : "dropdown-content"}>
-    <Link to="/birds/type">Birds!</Link>
-    <br/>
-    <Link to="/birds/create">Add a Bird</Link>
-  </div>
-</div>
-
-      <Link to="/register">
-        <h3>Register</h3>
-      </Link>
-      <Link to="/birds">
-        Bird Friends
-      </Link>
+        <button onClick={handleClick} className="dropbtn">
+          Menu
+        </button>
+        <div id="myDropdown" className={click ? "show" : "dropdown-content"}>
+          
+          {currentUser ? <Link to="/birds/create">Add a Bird</Link> : null}
+          <br />
+          {currentUser ? null : <Link to="/register">Register</Link>}
+          <br />
+          <Link to="/birds">Bird Friends</Link>
+          <br />
+          {currentUser ? null : <Link to="/login">LOG IN</Link>}
+          <br/>
+          {currentUser ? <button onClick={handleLogout}>Logout</button> : null
+          }
+        </div>
+      </div>
+      
     </div>
   );
 }
