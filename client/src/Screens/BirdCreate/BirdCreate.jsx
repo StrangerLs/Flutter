@@ -62,7 +62,7 @@ export default function BirdCreate(props) {
       <br/>
       <label>Bird Type:
         <select
-          defaultValue='default'
+          // defaultValue='default'
           name='type_of_bird'
           value={type_of_bird}
           onChange={handleChange}

@@ -25,7 +25,7 @@ export const deleteBird = async (id) => {
   return resp;
 }
 
-// export const typeBird = async (name) => {
-//   const resp = await api.get(`/birds/type/${name}`)
-//   return resp
-// }
+export const typeBird = async (name) => {
+  const resp = await api.get(`/birds/type/${name}`)
+  return resp
+}

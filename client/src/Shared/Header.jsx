@@ -27,7 +27,13 @@ export default function Header(props) {
           Menu
         </button>
         <div id="myDropdown" className={click ? "show" : "dropdown-content"}>
-          
+          <Link to='/birds/type/Macaw'>Macaws</Link>
+          <br/>
+          <Link to='/birds/type/African Grey'>Afircan Greys</Link>
+          <br/>
+          <Link to='/birds/type/Conure'>Conures</Link>
+          <br/>
+          <Link to='/birds/type/Cockatoo'>Cockatoos</Link>
           <br />
           {currentUser ? <Link to="/birds/create">Add a Bird</Link> : null}
           <br />
