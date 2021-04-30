@@ -20,7 +20,7 @@ export default function SignIn(props) {
   }
 
   return (
-    <form onSubmit={(e) => {
+    <form className='form1' onSubmit={(e) => {
       e.preventDefault();
       handleLogin(formData)
     }}>
@@ -28,6 +28,7 @@ export default function SignIn(props) {
       <label>
         Username:
         <input
+          id='input1'
           type='text'
           name='username'
           value={username}
@@ -38,6 +39,7 @@ export default function SignIn(props) {
       <label>
         Password:
         <input
+          id='input1'
           type='password'
           name='password'
           value={password}
@@ -45,7 +47,7 @@ export default function SignIn(props) {
         />
       </label>
       <br />
-      <button>Submit</button>
+      <button id='formButt'>Submit</button>
     </form>
   )
 }

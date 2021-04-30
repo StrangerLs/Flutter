@@ -38,13 +38,16 @@ export default function BirdEdit(props) {
   }
 
   return (
-    <form onSubmit={(e) => {
+    <form className='form1' onSubmit={(e) => {
       e.preventDefault();
       handleEdit(id, formData);
     }}>
+      <div id='inputs'>
+
       <h1>Edit Bird</h1>
       <label>Name:
         <input
+          id='input1'
           type='text'
           name='name'
           value={name}
@@ -54,6 +57,7 @@ export default function BirdEdit(props) {
       <br />
       <label>Image Url:
         <input
+          id='input1'
           type='text'
           name='image_url'
           value={image_url}
@@ -63,15 +67,18 @@ export default function BirdEdit(props) {
       <br />
       <label>Description:
         <input
+          id='input2'
           type='text'
           name='description'
           value={description}
           onChange={handleChange}
         />
       </label>
+      </div>
       <br />
       <label>Bird Type:
         <select
+          id='dropper'
           name='type_of_bird'
           value={type_of_bird}
           onChange={handleChange}
@@ -83,7 +90,7 @@ export default function BirdEdit(props) {
           </select>
       </label>
       <br />
-      <button>Submit</button>
+      <button id='formButt'>Submit</button>
     </form>
   )
 }

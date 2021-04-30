@@ -21,15 +21,16 @@ export default function SignUp(props) {
   }
   return (
     
-      <form onSubmit={(e) => {
+      <form className='form1' onSubmit={(e) => {
         e.preventDefault();
       handleRegister(formData)
       history.push('/birds/create')
       }}>
         <h3>Sign Up!</h3>
         <label>
-          Username:
+        Username:
             <input
+            id='input1'
             type='text'
             name='username'
             value={username}
@@ -40,6 +41,7 @@ export default function SignUp(props) {
       <label>
         Email:
         <input
+          id='input1'
           type='text'
           name='email'
           value={email}
@@ -49,6 +51,7 @@ export default function SignUp(props) {
       <br />
       <label>Password:
         <input
+          id='input1'
           type='password'
           name='password'
           value={password}
@@ -56,7 +59,7 @@ export default function SignUp(props) {
         />
       </label>
       <br />
-      <button>Submit</button>
+      <button id='formButt'>Submit</button>
       </form>
 
         
