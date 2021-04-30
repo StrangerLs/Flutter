@@ -16,12 +16,11 @@
 .allbird{
   display: flex;
   flex-direction: column;
-  position: fixed;
   justify-content: space-around;
 }
 
 #container{
-  width: 90vw;
+  width: 90%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;

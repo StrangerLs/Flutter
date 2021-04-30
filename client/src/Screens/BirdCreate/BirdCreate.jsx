@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import './BirdCreate.css'
 
 
 
@@ -26,15 +27,18 @@ export default function BirdCreate(props) {
   }
 
   return (
-    <form onSubmit={(e) => {
+    <form className='form1' onSubmit={(e) => {
       e.preventDefault();
       
       handleCreate(formData);
       
     }}>
+      <div className='inputs'>
+
       <h3>Add your bird!</h3>
       <label>Name:
         <input
+            id='input1'
           type='text'
           name='name'
           value={name}
@@ -44,6 +48,7 @@ export default function BirdCreate(props) {
       <br/>
       <label> Image Url:
         <input
+            id='input2'
           type='text'
           name='image_url'
           value={image_url}
@@ -53,6 +58,7 @@ export default function BirdCreate(props) {
       <br/>
       <label>Description:
         <input
+            id='input3'
           type='text'
           name='description'
           value={description}
@@ -60,9 +66,11 @@ export default function BirdCreate(props) {
         />
       </label>
       <br/>
+      </div>
       <label>Bird Type:
         <select
           // defaultValue='default'
+          id='dropper'
           name='type_of_bird'
           value={type_of_bird}
           onChange={handleChange}
@@ -75,7 +83,7 @@ export default function BirdCreate(props) {
         </select>
       </label>
       <br />
-      <button>Submit</button>
+      <button id='formButt'>Submit</button>
     </form>
   )
 }

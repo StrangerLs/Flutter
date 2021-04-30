@@ -1,0 +1,20 @@
+#btype{
+  display: flex;
+}
+
+.everybird{
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom: 1px black solid;
+  float: right;
+}
+
+
+
+#binfo{
+  display: flex;
+  margin-left: 5%;
+}
+
+
+
