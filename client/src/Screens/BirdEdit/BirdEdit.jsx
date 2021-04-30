@@ -71,12 +71,16 @@ export default function BirdEdit(props) {
       </label>
       <br />
       <label>Bird Type:
-        <input
-          type='text'
+        <select
           name='type_of_bird'
           value={type_of_bird}
           onChange={handleChange}
-        />
+        >
+          <option>Macaw</option>
+          <option>African Grey</option>
+          <option>Conure</option>
+          <option>Cockatoo</option>
+          </select>
       </label>
       <br />
       <button>Submit</button>
