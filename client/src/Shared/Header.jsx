@@ -12,20 +12,31 @@ export default function Header(props) {
 
   return (
     <div>
-      <Link to="/">
-        <h1>FLUTTER</h1>
-      </Link>
 
-      {currentUser ? (
-        <h1>{`Welcome ${currentUser?.username}!`}</h1>
-      ) : (
-        <h1>Welcome!</h1>
-      )}
-
+    <div className='header'>
       <div className="dropdown">
         <button onClick={handleClick} className="dropbtn">
           Menu
         </button>
+      </div>
+      <div id='flutter'>
+
+      <Link to="/">
+        <h1>FLUTTER</h1>
+      </Link>
+      </div>
+
+      <div id='greeting'>
+      {currentUser ? (
+        <h1>{`Welcome, ${currentUser?.username}!`}</h1>
+      ) : (
+        <h1>Welcome!</h1>
+      )}
+
+      </div>
+
+      
+    </div>
         <div id="myDropdown" className={click ? "show" : "dropdown-content"}>
           <Link to="/birds">Bird Friends</Link>
           <br />
@@ -44,11 +55,9 @@ export default function Header(props) {
           
           {currentUser ? null : <Link to="/login">LOG IN</Link>}
           <br/>
-          {currentUser ? <button onClick={handleLogout}>Logout</button> : null
+          {currentUser ? <button id='menu' onClick={handleLogout}>Logout</button> : null
           }
         </div>
-      </div>
-      
     </div>
   );
 }

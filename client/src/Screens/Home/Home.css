@@ -1,8 +1,17 @@
 #slogan {
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  flex-flow: column wrap;
   color: white;
-  text-align: center;
+  font-size: 2vw;
+  position: absolute;
 }
 
+#home-img {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 60%;
+  border-radius: 300px;
+  border: solid rgba(#000, .2);
+
+}
