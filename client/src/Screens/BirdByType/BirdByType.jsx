@@ -31,8 +31,9 @@ export default function BirdByType(props) {
       <React.Fragment key={bird.id}>
         <Link to={`/birds/${bird.id}`}>
           <p>{bird.name}</p>
-        <img src={bird.image_url} alt='bird'/>
+          <img src={bird.image_url} alt='bird' />
         </Link>
+          <p>{bird.description}</p>
       </React.Fragment>
     ))}
     </div>
