@@ -38,10 +38,10 @@ export default function BirdInfo(props) {
 
   return (
     <div className='specBird'>
-      <h1>{bird?.name}</h1>
-      <img src={bird?.image_url} />
-      <h2>{bird?.description}</h2>
-      <h3>Type: {bird?.type_of_bird}</h3>
+      <h1 id='birdy'>{bird?.name}</h1>
+      <img id='picz' src={bird?.image_url} />
+      <h2 id='birdStuff' >{bird?.description}</h2>
+      <h3 id='breed'>Type: {bird?.type_of_bird}</h3>
       
       {bird.characteristics.map(bird => (
       <React.Fragment key={bird.id}>
@@ -50,11 +50,11 @@ export default function BirdInfo(props) {
     ))}
       {currentUser?.id === bird?.user_id && (
         <>
-          <Link to={`/birds/${bird?.id}/edit`}><button id='formButt'>Edit</button></Link>
+          <Link to={`/birds/${bird?.id}/edit`}><button id='edit'>Edit</button></Link>
           
-          <button id='formButt' onClick={() => handleDelete(bird.id)}>delete</button>
+          <button id='delete' onClick={() => handleDelete(bird.id)}>delete</button>
           <form onSubmit={handleSubmit}>
-        <select id='dropper' onChange={handleChange} defaultValue="default">
+        <select id='select' onChange={handleChange} defaultValue="default">
           <option disabled value="default">
             -- Select a characteristic --
           </option>
@@ -65,7 +65,7 @@ export default function BirdInfo(props) {
           ))}
             </select>
             <br/>
-        <button id='formButt'>add</button>
+        <button id='add'>add</button>
       </form>
         </>
       )}

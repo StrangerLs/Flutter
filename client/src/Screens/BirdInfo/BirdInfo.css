@@ -1,3 +1,28 @@
 .specBird{
+display: flex;
+color: white;
+flex-flow: column wrap;
+
+}
+
+#birdy{
+  margin: 0 auto;
   
+}
+#picz{
+  max-height: 300px;
+  max-width: 200px;
+  margin: 0 auto;
+  
+}
+
+#delete{
+  width: 5%;
+  margin: 0 auto;
+}
+
+@media (max-width: 400px){
+  #delete{
+    width: 20%;
+  }
 }

@@ -31,3 +31,18 @@
   margin-left: -70%;
   color: white;
 }
+
+@media (max-width: 400px) {
+  #binfo{
+    display: flex;
+    margin-top: -130%;
+    font-size: 160%;
+    border-top: none;
+    color: white;
+    margin-left: -2%;
+  }
+
+  #btype{
+    margin-left: 0%;
+  }
+}
