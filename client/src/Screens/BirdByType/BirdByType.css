@@ -46,3 +46,14 @@
     margin-left: 0%;
   }
 }
+
+@media (max-width: 1050px) {
+  #binfo{
+    margin-top: -40%;
+    border-top: none;
+  }
+
+  #btype{
+    margin-left: 0%;
+  }
+}
