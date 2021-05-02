@@ -1,20 +1,33 @@
-#btype{
-  display: flex;
+.birdByType{
+  display: grid;
+  grid-template-areas:
+  "N N"
+  "P D"
+  "P D";
 }
 
-.everybird{
-  display: flex;
-  flex-flow: row wrap;
-  border-bottom: 1px black solid;
-  float: right;
+#bname {
+  grid-area: N;
+  margin-top: 20%;
+  color: white;
+  font-size: 110%;
 }
 
-
+#bpic {
+  grid-area: P;
+}
 
 #binfo{
   display: flex;
-  margin-left: 5%;
+  margin-top: -30%;
+  margin-left: 20%;
+  font-size: 160%;
+  border-top: 1px solid black;
+  color: white;
 }
 
-
-
+#btype{
+  margin-top: 5%;
+  margin-left: -70%;
+  color: white;
+}

@@ -23,7 +23,7 @@ export default function BirdByType(props) {
   return (
     <div className='birdByType'>
       <h1 id="btype">{name}'s</h1>
-      <div className='everybird'>
+      
 
       {birdy.data.map((bird) => (
         <React.Fragment key={bird.id}>
@@ -34,7 +34,7 @@ export default function BirdByType(props) {
           <p id="binfo">{bird.description}</p>
         </React.Fragment>
       ))}
-      </div>
+      
     </div>
   );
 }

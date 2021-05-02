@@ -4,6 +4,7 @@ import { useParams, useHistory } from "react-router-dom";
 import { getOneBird } from "../../Services/birds";
 import { Link } from "react-router-dom";
 import { addCharacteristic } from "../../Services/characteristics";
+import './BirdInfo.css';
 
 export default function BirdInfo(props) {
   const [charId, setCharId] = useState("");
@@ -36,7 +37,7 @@ export default function BirdInfo(props) {
   }
 
   return (
-    <div>
+    <div className='specBird'>
       <h1>{bird?.name}</h1>
       <img src={bird?.image_url} />
       <h2>{bird?.description}</h2>
@@ -49,11 +50,11 @@ export default function BirdInfo(props) {
     ))}
       {currentUser?.id === bird?.user_id && (
         <>
-          <Link to={`/birds/${bird?.id}/edit`}><button>Edit</button></Link>
+          <Link to={`/birds/${bird?.id}/edit`}><button id='formButt'>Edit</button></Link>
           
-          <button onClick={() => handleDelete(bird.id)}>delete</button>
+          <button id='formButt' onClick={() => handleDelete(bird.id)}>delete</button>
           <form onSubmit={handleSubmit}>
-        <select onChange={handleChange} defaultValue="default">
+        <select id='dropper' onChange={handleChange} defaultValue="default">
           <option disabled value="default">
             -- Select a characteristic --
           </option>
@@ -62,8 +63,9 @@ export default function BirdInfo(props) {
               {characteristic.name}
             </option>
           ))}
-        </select>
-        <button>add</button>
+            </select>
+            <br/>
+        <button id='formButt'>add</button>
       </form>
         </>
       )}
