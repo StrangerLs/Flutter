@@ -3,7 +3,7 @@
 
 ## Overview
 
-**Flutter** is a full-stack react on rails app that matches potential bird owners and current bird owners with available birds as pets. This website will allow users to make a profile and search for potential birds to be adopted based on specific criteria. Users will be able to favorite potential birds, interact with bird profiles and find information on types of birds. Users will also be able to post birds for adoption in their area and recommend other resources.
+**Flutter** is a full-stack react on rails app that matches potential bird owners and current bird owners with available birds as pets. This website will allow users to make a profile and search for potential birds to be adopted based on specific criteria. Users will be able to interact with bird profiles and find information on types of birds. Users will also be able to post birds for and recommend other resources.
 
 
 <br>
@@ -137,23 +137,23 @@ src
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Proposal            |    H     |     4 hrs      |     2 hrs     |    3 hrs    |
-| Backend file structure setup |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Create tables |    H     |     2 hrs      |     1 hrs     |     TBD     |
-| Api Call setup|    H     |     3 hrs      |     3 hrs     |     TBD     |
-| Route setup |    H     |     3 hrs      |     3 hrs     |     TBD     |
-| DB seed |    H     |     1 hrs      |     2 hrs     |     TBD     |
-| Create Frontend file structure |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Hookup backend to front end |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Homepage/styling |    H     |     5 hrs      |     2 hrs     |     TBD     |
-| Navbar/styling |    H     |     3 hrs      |     2 hrs     |     TBD     |
-| Sign in/styling |    H     |     2 hrs      |     2 hrs     |     TBD     |
-| Sign up/styling |    H     |     2 hrs      |     2 hrs     |     TBD     |
-| General bird page/styling |    H     |     4 hrs      |     2 hrs     |     TBD     |
-| Specific bird page/styling |    H     |     4 hrs      |     2 hrs     |     TBD     |
-| Create Bird page/styling |    H     |     4 hrs      |     2 hrs     |     TBD     |
-| Bird care page/styling |    L     |     4 hrs      |     2 hrs     |     TBD     |
-| supplies page/styling |    L     |     4 hrs      |     2 hrs     |     TBD     |
-| TOTAL               |          |     45 hrs      |     3 hrs     |     TBD     |
+| Backend file structure setup |    H     |     3 hrs      |     5 hrs     |     5     |
+| Create tables |    H     |     2 hrs      |     1.5 hrs     |     1.5     |
+| Api Call setup|    H     |     3 hrs      |     4 hrs     |     4     |
+| Route setup |    H     |     3 hrs      |     5 hrs     |     5     |
+| DB seed |    H     |     1 hrs      |     1 hrs     |     1     |
+| Create Frontend file structure |    H     |     3 hrs      |     4 hrs     |     4     |
+| Hookup backend to front end |    H     |     3 hrs      |     6 hrs     |     6     |
+| Homepage/styling |    H     |     5 hrs      |     3 hrs     |     3     |
+| Navbar/styling |    H     |     3 hrs      |     2 hrs     |     2     |
+| Sign in/styling |    H     |     2 hrs      |     2 hrs     |     2     |
+| Sign up/styling |    H     |     2 hrs      |     2 hrs     |     2     |
+| General bird page/styling |    H     |     4 hrs      |     5 hrs     |     5     |
+| Specific bird page/styling |    H     |     4 hrs      |     4 hrs     |     4     |
+| Create Bird page/styling |    H     |     4 hrs      |     2 hrs     |     2     |
+| Bird care page/styling |    L     |     4 hrs      |     0 hrs     |     0     |
+| supplies page/styling |    L     |     4 hrs      |     0 hrs     |     0     |
+| TOTAL               |          |     45 hrs      |     42.5 hrs     |     42.5     |
 
 
 <br>
