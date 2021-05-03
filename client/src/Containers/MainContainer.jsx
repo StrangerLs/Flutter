@@ -3,7 +3,7 @@ import { Switch, Route, useHistory } from 'react-router-dom';
 
 
 import { getCharacteristics } from '../Services/characteristics'
-import { deleteBird, getAllBirds, postBird, putBird, typeBird } from '../Services/birds'
+import { deleteBird, getAllBirds, postBird, putBird } from '../Services/birds'
 import AllBirds from '../Screens/AllBirds/AllBirds';
 import Home from '../Screens/Home/Home'
 import BirdInfo from '../Screens/BirdInfo/BirdInfo'

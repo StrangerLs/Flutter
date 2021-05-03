@@ -5,7 +5,6 @@ import { typeBird } from "../../Services/birds";
 import "./BirdByType.css";
 export default function BirdByType(props) {
   const [birdy, setBirdy] = useState([{}]);
-  const { birds } = props;
   const { name } = useParams();
 
   useEffect(() => {
